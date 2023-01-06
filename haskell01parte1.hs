@@ -15,3 +15,15 @@ htmlItem s = "<li>" ++ s ++ "</li>"
 
 startsWithA :: String -> Bool
 startsWithA s = head s == 'A'
+
+isVerb :: String -> Bool
+isVerb s = last s == 'r'
+
+isVowel :: Char -> Bool
+isVowel c = elem c "aeiou"
+
+hasEqHeads :: [Int] -> [Int] -> Bool
+hasEqHeads l1 l2 = head l1 == head l2
+
+isVowel2 :: Char -> Bool
+isVowel2 c = c `elem` "aeiouAEIOU"
